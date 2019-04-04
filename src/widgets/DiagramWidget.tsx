@@ -447,7 +447,7 @@ export class DiagramWidget extends BaseWidget<DiagramProps, DiagramState> {
 						} else {
 							scrollDelta /= 60;
 						}
-						if (diagramModel.getZoomLevel() + scrollDelta > 10) {
+						if (diagramModel.getZoomLevel() + scrollDelta > 0) {
 							diagramModel.setZoomLevel(diagramModel.getZoomLevel() + scrollDelta);
 						}
 
